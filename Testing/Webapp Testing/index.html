@@ -1,21 +1,24 @@
+<!DOCTYPE html>
+<!-- This is a very simple example of using Web WorldWind. -->
 <html>
-  <head>
-    <title>OpenNitroMap</title>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="map" style="width: 400px; height: 300px"></div>
+
+<head lang="en">
+
+<meta charset="UTF-8">
+<title>OpenNitroMap</title>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+<body>
+
+    <div id='map' style='width: 400px; height: 300px;'></div>
     <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1Ijoic3RzaGFja3N1Ym1pc3Npb24iLCJhIjoiY2trMWpsYjV6MGc5czJwcGpxbWh2dGRteCJ9.xjmP9z9aMSXrgSzT5U8DSA";
-      var map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/mapbox/streets-v11",
-      });
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhZ2dlcmVkZ29yZTk5IiwiYSI6ImNrOG1rN3lvbzBmdTEzZ24xbDJhODE0aTQifQ.m7OCieIRZeQ9v3fM9YWB9w';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+        });
     </script>
-  </body>
-</html>
+
+</body>
