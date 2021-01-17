@@ -1,13 +1,6 @@
 #- Location: Latitude and Longitude
 #- Nitrogen: 550ppi
-# Libraries Matlib, Pandas, Numpy
-import csv
-
-f = open('C:\Users\Eldar\Documents\GitHub\STS-Hacks\Testing\Python Backen\NO2_err.csv')
-
-csv_f = csv.reader(f)
-
-for row in csv_f:
-    print row
-
-f.close()
+# Libraries Matlib, Pandas
+import Pandas pd
+data = pd.read_csv("NO2_err.csv")
+data.head()
